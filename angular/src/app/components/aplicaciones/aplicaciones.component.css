@@ -1,0 +1,11 @@
+#aplicaciones{
+	max-width: 100%;
+	overflow: hidden;
+}
+.row{
+	padding: 0;
+}
+#aplicaciones #cabecera img{
+	display: block;
+	width: 100%;
+}
