@@ -2,3 +2,9 @@
 	margin:20px 0;
 	padding: 10px 15px
 }
+.btn-web{
+	border-radius: 50px;
+	margin: auto;
+	max-width: 120px;
+	display: block;
+}
