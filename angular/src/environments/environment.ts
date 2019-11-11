@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  path:"http://localhost/desarrollo/appsstars/public/"
+  path:"http://192.168.0.2/desarrollo/appsstars/public/"
 };
 
 /*

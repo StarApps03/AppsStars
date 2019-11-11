@@ -1,4 +1,4 @@
-  <section id="intro" class="clearfix">
+<section id="intro" class="clearfix" [ngStyle]="{'background':'url('+path+'img/intro-bg.png) center bottom no-repeat'}">
     <div class="container">
 
       <div class="intro-img">
@@ -6,10 +6,10 @@
       </div>
 
       <div class="intro-info">
-        <h2>Apps Stars<br><br><small>Impulsamos tu marca por medio de estrategias digitales</small>!</h2>
+        <h2>Apps Stars<br><small>Soluciones efectivas a tu medida</small></h2>
         <div>
-          <a href="#about" class="btn-get-started scrollto">Contactenos</a>
-          <a href="#services" class="btn-services scrollto">Servicios</a>
+          <a [routerLink]='["/contacto"]' class="btn-get-started scrollto">Contáctenos</a>
+          <a [routerLink]='["/servicios"]' class="btn-services scrollto">Asesoria</a>
         </div>
       </div>
 
@@ -22,18 +22,14 @@
       About Us Section
     ============================-->
     <section id="about">
+      <h3 class="text-center" style="font-weight: bold;">SERVICIOS</h3>
+      <span class="divider-small"></span>
       <div class="container">
-
-        <header class="section-header">
-          <h3>Servicios</h3>
-          <p>.</p>
-        </header>
-
         <div class="row about-container">
 
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4">
             <div class="card">
-              <img src="https://static.vecteezy.com/system/resources/previews/000/260/777/non_2x/modern-flat-design-isometric-concept-of-web-development-for-banner-and-website-landing-page-template-teamwork-project-web-agency-and-new-company-project-vector-illustration.jpg" class="card-img-top" alt="...">
+              <img src="{{path}}/img/banner/banner_small_web.jpg" class="card-img-top" alt="paginas web y sitios crm plataformas en tunja" title="paginas web en tunja">
                   <div class="card-body">
                     <h5 class="card-title text-center">Sitios Web</h5>
                     <a href="#" class="btn btn-outline-success btn-web">VER PLANES</a>
@@ -41,9 +37,9 @@
               </div>
           </div>
 
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4">
             <div class="card">
-              <img src="https://cdn.dribbble.com/users/2446777/screenshots/4929349/dribbble.jpg" class="card-img-top" alt="...">
+              <img src="{{path}}/img/banner/banner_small_apps.jpg" class="card-img-top" alt="paginas web y sitios crm plataformas en tunja" title="paginas web en tunja">
                   <div class="card-body">
                     <h5 class="card-title text-center">Apps moviles</h5>
                     <a href="#" class="btn btn-outline-success btn-web">VER PLANES</a>
@@ -51,18 +47,17 @@
               </div>
           </div>
 
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-4">
             <div class="card">
-              <img src="https://static.vecteezy.com/system/resources/previews/000/260/777/non_2x/modern-flat-design-isometric-concept-of-web-development-for-banner-and-website-landing-page-template-teamwork-project-web-agency-and-new-company-project-vector-illustration.jpg" class="card-img-top" alt="...">
+              <img src="{{path}}/img/banner/banner_small_visual.jpg" class="card-img-top" alt="paginas web y sitios crm plataformas en tunja" title="paginas web en tunja">
                   <div class="card-body">
-                    <h5 class="card-title">Producción audiovisual</h5>
-                    <p class="card-text">Creacion de sitios web, CRM, Tiendas en linea.</p>
-                    <a href="#" class="btn btn-primary">Solicitar cotización</a>
+                    <h5 class="card-title text-center">Producción Audiovisual</h5>
+                    <a href="#" class="btn btn-outline-success btn-web">VER PLANES</a>
                   </div>
               </div>
           </div>
 
-          <div class="col-xs-12 col-md-3">
+          <div class="col-xs-12 col-md-3" style="display: none;">
             <div class="card">
               <img src="https://static.vecteezy.com/system/resources/previews/000/260/777/non_2x/modern-flat-design-isometric-concept-of-web-development-for-banner-and-website-landing-page-template-teamwork-project-web-agency-and-new-company-project-vector-illustration.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -121,39 +116,70 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>NUESTRO ENFOQUE</h3>
-          <p>Nos enfocamos esta basado entorno al <b>Marketing Digital</b></p>
+          <h3>¿Qué hacemos?</h3>
+          <br>
         </header>
 
         <div class="row">
 
-          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+          <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">Pocicionamiento SEO</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
-            <div class="box">
-              <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">Marketing de contenidos</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="">POCICIONAMIENTO SEO</a></h4>
+              <div class="description">
+                <p>Utilizamos metodos efectivos para posicionar tu web.</p>
+                <ul>
+                  <li>Implementación  palabras clave para ayudar a los buscadores a encontrar su web.</li>
+                  <li>Optimización de contenidos para acelerar el tiempo de carga.</li>
+                  <li>Indexación en los motores de busqueda.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+
+          <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">Social media</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <div class="icon"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">WEB Y APLICACIONES</a></h4>
+              <div class="description">
+                <p>Desarrollo de:</p>
+                <ul>
+                  <li>Landing Pages & Sitios Web.</li>
+                  <li>Plataformas a la medida.</li>
+                  <li>Aplicaciones moviles.</li>
+                  <br><br>
+                </ul>
+              </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+
+
+
+          <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
-              <div class="icon"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-              <h4 class="title"><a href="">Publicidad en Google Ads</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <div class="icon"><i class="ion-ios-bookmarks-outline" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">MARKETING</a></h4>
+              <p class="description"></p>
+              <ul>
+                <li>Administración de Redes Sociales.</li>
+                <li>Creación de campañas <b>SEM</b>.</li>
+                <li>Pauta en Redes Sociales</li>
+                <br>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">PRODUCCIÓN VISUAL</a></h4>
+              <ul>
+                <li>Animaciones</li>
+                <li>Edición de fotografias y videos.</li>
+                <li>Toma de fotografia y video</li>
+                <br>
+              </ul>              
             </div>
           </div>
         </div>
@@ -179,7 +205,6 @@
               <div class="card-body">
                 <h5 class="card-title">Excelente equipo de profesionales a su servicio</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -190,7 +215,6 @@
               <div class="card-body">
                 <h5 class="card-title">Compromiso con la satisfacción del cliente.</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -201,7 +225,6 @@
               <div class="card-body">
                 <h5 class="card-title">Honestidad e integridad.</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -212,7 +235,6 @@
               <div class="card-body">
                 <h5 class="card-title">Confiabilidad.</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -223,7 +245,6 @@
               <div class="card-body">
                 <h5 class="card-title">Nuestros productos son de calidad.</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -234,7 +255,6 @@
               <div class="card-body">
                 <h5 class="card-title">Trabajamos de la mano con el cliente.</h5>
                 <p class="card-text"></p>
-                <a href="#" class="readmore">Read more </a>
               </div>
             </div>
           </div>
@@ -246,7 +266,7 @@
     <!--==========================
       Portfolio Section
     ============================-->
-    <section id="portfolio" class="clearfix">
+    <section id="portfolio" class="clearfix" style="display: none;">
       <div class="container">
 
         <header class="section-header">
@@ -631,7 +651,7 @@
 
         <div class="section-header">
           <h3>Contacto</h3>
-          <p>Dejanos tus datos y en breve nos comunicaremos con tigo</p>
+          <p>Déjanos tus datos y en breve nos comunicaremos con tigo</p>
         </div>
 
         <div class="row wow fadeInUp">
@@ -646,15 +666,15 @@
             <div class="row">
               <div class="col-md-5 info">
                 <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street, NY 535022</p>
+                <p>A108 Adam Street, NY 53502</p>
               </div>
               <div class="col-md-4 info">
                 <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
+                <p>info@appsstars.com.co</p>
               </div>
               <div class="col-md-3 info">
                 <i class="ion-ios-telephone-outline"></i>
-                <p>+1 5589 55488 55</p>
+                <p>+1 5589 55488</p>
               </div>
             </div>
 
